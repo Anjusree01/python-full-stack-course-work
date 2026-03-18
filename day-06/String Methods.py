@@ -1,11 +1,8 @@
-Python 3.13.12 (tags/v3.13.12:1cbe481, Feb  3 2026, 18:22:25) [MSC v.1944 64 bit (AMD64)] on win32
-Enter "help" below or click "Help" above for more information.
+
 #1.case conversion methods
 
 "anjusree".upper()
 'ANJUSREE'
-'ANJUSREE.lower()
-SyntaxError: unterminated string literal (detected at line 1)
 'ANJUSREE'.lower()
 'anjusree'
 'anju'.capitalize()
@@ -50,9 +47,6 @@ SyntaxError: unterminated string literal (detected at line 1)
 'anju'.index("a")
 0
 'anju'.index('s')
-Traceback (most recent call last):
-  File "<pyshell#29>", line 1, in <module>
-    'anju'.index('s')
 ValueError: substring not found
 'anju'.rindex("u")
 3
@@ -79,11 +73,6 @@ True
 True
 "var1".isidentifier()
 True
-"10".isliteral()
-Traceback (most recent call last):
-  File "<pyshell#44>", line 1, in <module>
-    "10".isliteral()
-AttributeError: 'str' object has no attribute 'isliteral'
 10.isliteral()
 SyntaxError: invalid syntax
 
@@ -91,52 +80,38 @@ SyntaxError: invalid syntax
 
 "anjusree".replace("sree","anju")
 'anjuanju'
-'anjusree.translate9str.maketrans("a","x"))
-SyntaxError: unterminated string literal (detected at line 1)
 'anjusree'.translate(str.maketrans("a","x"))
 'xnjusree'
->>> 'anjusree'.maketrans("anju","sree")
+'anjusree'.maketrans("anju","sree")
 {97: 115, 110: 114, 106: 101, 117: 101}
->>> 
->>> 
->>> #6.splitting & joining methods
->>> 
->>> "a,n,j,u".split(",")
+
+#6.splitting & joining methods
+"a,n,j,u".split(",")
 ['a', 'n', 'j', 'u']
->>> "a,n,j,u".rsplit(",", 1)
+"a,n,j,u".rsplit(",", 1)
 ['a,n,j', 'u']
->>> "Anju\nSree".splitlines()
+"Anju\nSree".splitlines()
 ['Anju', 'Sree']
->>> " ".join(["Hello", "world"])
+" ".join(["Hello", "world"])
 'Hello world'
->>> "anju-sree".partition("-")
+"anju-sree".partition("-")
 ('anju', '-', 'sree')
->>> "anju-sree".rpartition("-")
+"anju-sree".rpartition("-")
 ('anju', '-', 'sree')
->>> 
->>> #7.whitespace & trimming methods
->>> "  anju  ".strip()
+
+#7.whitespace & trimming methods
+"  anju  ".strip()
 'anju'
->>> "--anju".lstrip()
+"--anju".lstrip()
 '--anju'
->>> "--anju".lstrip("-")
+"--anju".lstrip("-")
 'anju'
->>> "anju--".rstrip("-")
+"anju--".rstrip("-")
 'anju'
->>> 
->>> #8.encoding & decoding:
->>> 
->>> "anju".encode("utf-8")
+
+#8.encoding & decoding:
+
+"anju".encode("utf-8")
 b'anju'
->>> "anju".encode("utf-9")
-Traceback (most recent call last):
-  File "<pyshell#73>", line 1, in <module>
-    "anju".encode("utf-9")
-LookupError: unknown encoding: utf-9
->>> "anju".decode("utf-8")
-Traceback (most recent call last):
-  File "<pyshell#74>", line 1, in <module>
-    "anju".decode("utf-8")
-AttributeError: 'str' object has no attribute 'decode'. Did you mean: 'encode'?
->>> b"anju".decode("utf-8")
+b"anju".decode("utf-8")
 'anju'
