@@ -74,6 +74,17 @@ if internet_speed == "high":
 else:
     print("play video with low quality")
 
+#5.
+order_status = ["placed", "shipped", "in_transit", "out_for_delivery", "delivered"]
+
+current_status = input("Enter current order status: ")
+
+if current_status in order_status:
+    print("Order status:", current_status)
+else:
+    print("Invalid order status")
+
+
 
 print('-------------------elif---------------------')
 
@@ -113,17 +124,6 @@ elif traffic == "medium":
 else:
     print("route line shows red colour")
 
-#5.
-order_status = ["placed", "shipped", "in_transit", "out_for_delivery", "delivered"]
-
-current_status = input("Enter current order status: ")
-
-if current_status in order_status:
-    print("Order status:", current_status)
-elif current_status in order_status:
-    print("Order status:", current_status)
-else:
-    print("Invalid order status")
 
 print('-------------------nested if---------------------')
 #1
