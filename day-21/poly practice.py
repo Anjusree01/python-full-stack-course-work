@@ -1,4 +1,4 @@
-'''
+
 #1.
 class Payment:
     def pay(self, amount):
@@ -41,7 +41,7 @@ printout.LaserPrinter()
 
 #4.
 
-'''
+
 
 class Video:
     def play(self):
