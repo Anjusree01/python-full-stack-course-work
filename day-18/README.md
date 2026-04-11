@@ -26,3 +26,6 @@ instance method #the method that deals with the instance attribute
 static method #apart of class and instance we use this, helper method
 
 self-refers to the current object
+
+#class att, class meth, inst att, inst meth, static => object
+#class att, class meth, static => class
