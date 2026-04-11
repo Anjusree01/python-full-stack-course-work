@@ -16,9 +16,6 @@ class Flipkart:
         self.order_id=order_id
         print(f"You have order these product with id:{self.order_id}")
 
-
-
-
 anju = Flipkart()
 himaja = Flipkart()
 
@@ -37,7 +34,6 @@ anju.welcome()
 Flipkart.updateDiscount(20)
 Flipkart.welcome()
 
-'''
 #1.creating e-comm product class
 class E_comm:
     name = 'phone'
