@@ -6,7 +6,7 @@ we dont have method overloading, it is not supported my python
 method-2(overidding)same methods, same parameters, parent/child concept
 one method in parent class one method in the child class
 rewriting the method again in child class
-
+'''
 
 class Hotstar:
     def __init__(self,username):
@@ -70,7 +70,7 @@ anju.viedoquality()
 
               
 operater over_ridding:
-'''
+
 class number:
     def __init__(self,num):
         self.num=num
